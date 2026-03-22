@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="468" height="522" viewBox="0 0 468 522">
+  <defs>
+    <filter id="楕円形_1" x="33" y="0" width="132" height="132" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.275"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="コーディング" transform="translate(-691 -442)">
+    <circle id="楕円形_2" data-name="楕円形 2" cx="234" cy="234" r="234" transform="translate(691 496)" fill="rgba(213,222,0,0.17)"/>
+    <g id="_1" data-name="1" transform="translate(457 -15)">
+      <circle id="楕円形_3" data-name="楕円形 3" cx="60" cy="60" r="60" transform="translate(270 461)" fill="rgba(255,255,255,0.45)"/>
+      <g transform="matrix(1, 0, 0, 1, 234, 457)" filter="url(#楕円形_1)">
+        <g id="楕円形_1-2" data-name="楕円形 1" transform="translate(36 4)" fill="none" stroke="#939393" stroke-width="3">
+          <circle cx="60" cy="60" r="60" stroke="none"/>
+          <circle cx="60" cy="60" r="58.5" fill="none"/>
+        </g>
+      </g>
+      <path id="パス_87" data-name="パス 87" d="M-6.923-32.121a2.475,2.475,0,0,0-2.408,2.537,2.169,2.169,0,0,0,2.365,2.193h.258c.516-.043,11.094-.215,11.395-.215.559,0,.86.258.86.688a2.118,2.118,0,0,1-.215.774C2.967-21.156-4.6-10.277-6.493-3.01a4.168,4.168,0,0,0-.129.989A2.266,2.266,0,0,0-4.257.387a2.911,2.911,0,0,0,2.8-2.365C.43-9.89,6.794-18.791,10.32-25.327a5.742,5.742,0,0,0,.731-2.752c0-2.279-1.677-4.042-4.816-4.042Z" transform="translate(329.5 537.5)" fill="#939393"/>
+    </g>
+  </g>
+</svg>
