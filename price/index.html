@@ -2,16 +2,109 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<?php
-$isHome = false;
-$pageTitle = "PRICE | daurora.net";
-include dirname(__DIR__) . "/includes/head.php";
-?>
+<head>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="ホームページ制作のDAURORA（ドーロラ）です。">
+  <link href="/assets/css/styles.css" rel="stylesheet">
+
+  <!-- Adobe Fonts -->
+  <script>
+    (function(d) {
+      var config = {
+          kitId: "wtb1feg",
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <title>PRICE | daurora.net</title>
+  <meta name="robots" content="max-image-preview:large">
+  <link rel="dns-prefetch" href="//rawgit.com">
+  <link rel="dns-prefetch" href="//use.fontawesome.com">
+  <link rel="stylesheet" id="font-awesome-css" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css?ver=6.5" type="text/css" media="all">
+  <script type="text/javascript" src="/assets/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+  <script type="text/javascript" src="/assets/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+  <script type="text/javascript" src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js?ver=6.5" id="kimmo-brunfeldt-js"></script>
+  <script type="text/javascript" src="/assets/js/main.js" id="daurora-main-js"></script>
+</head>
 
 
 
 <body class="home page-template-default page page-id-20">
-  <?php $isHome = false; include dirname(__DIR__) . "/includes/header.php"; ?>
+  <header class="header" id="header">
+  <!-- ナビゲーションメニュー -->
+  <div class="header_links">
+    <nav class="gnav">
+      <ul>
+        <li>
+          <a href="../">
+            <span><i class="fas fa-home"></i></span>
+            <span>HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="../#consept">
+            <span><i class="fas fa-pencil-alt"></i></span>
+            <span>CONSEPT</span>
+          </a>
+        </li>
+        <li>
+          <a href="../#flow">
+            <span><i class="fas fa-desktop"></i></span>
+            <span>FLOW</span>
+          </a>
+        </li>
+        <li>
+          <a href="../#price">
+            <span><i class="fas fa-calculator"></i></span>
+            <span>PRICE</span>
+          </a>
+        </li>
+        <li>
+          <a href="../#contact">
+            <span><i class="far fa-paper-plane"></i></span>
+            <span>CONTACT</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- ハンバーガー -->
+  <div class="header_menu">
+    <div id="nav_toggle">
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
 <main class="main page_main">
   <section class="sec sec_price">
     <div class="container">
@@ -165,7 +258,39 @@ include dirname(__DIR__) . "/includes/head.php";
       </div>
 </main>
 
-<?php $isHome = false; include dirname(__DIR__) . "/includes/footer.php"; ?>
+<div class="pagetop js-pagetop"><i class="fas fa-angle-up"></i>PAGE TOP</div>
+
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer_inner">
+      <nav>
+        <ul>
+                    <li>
+            <a href="../">HOME</a>
+          </li>
+                    <li>
+            <a href="../#consept">CONSEPT</a>
+          </li>
+                    <li>
+            <a href="../flow/">FLOW</a>
+          </li>
+                    <li>
+            <a href="../price/">PRICE</a>
+          </li>
+                    <li>
+            <a href="../#contact">CONTACT</a>
+          </li>
+                    <li>
+            <a href="../privacy_policy/">PRIVACY POLICY</a>
+          </li>
+                  </ul>
+      </nav>
+    </div>
+    <div class="footer_copyright">
+      <small>&copy; daurora.net 2026</small>
+    </div>
+  </div>
+</footer>
 </body>
 
 </html>
